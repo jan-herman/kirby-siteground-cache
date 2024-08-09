@@ -15,7 +15,7 @@ Kirby::plugin('jan-herman/siteground-cache', [
                 $kirby = kirby();
                 $site = $kirby->site();
 
-                if ($site->user()) {
+                if ($kirby->user()) {
                     $kirby->cache('pages')->flush();
                 }
 
