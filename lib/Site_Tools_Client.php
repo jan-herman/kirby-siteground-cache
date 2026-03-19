@@ -81,7 +81,7 @@ class Site_Tools_Client {
      * @return array $matches Matches from the search.
      */
     public static function get_site_tools_matching_domain() {
-        preg_match( '/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/im', get_home_url(), $matches );
+        preg_match( '/^(?:https?:\/\/)?(?:www\.)?([^\/]+)/im', site()->url(), $matches );
 
         return $matches;
     }
