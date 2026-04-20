@@ -62,7 +62,7 @@ class SiteGroundCache extends Cache
 		// Get hostname
 		$kirby = kirby();
 		$url = $kirby->site()->url();
-		$hostname = str_replace( 'www.', '', parse_url($url, PHP_URL_HOST));
+		$hostname = str_replace( 'www.', '', parse_url($url, PHP_URL_HOST) ?: '');
 
 		// Build the request params.
 		$args = array(
