@@ -2,10 +2,10 @@
 
 namespace JanHerman\SiteGroundCache;
 
-use Kirby\Cache\Cache;
+use Kirby\Cache\Cache as DefaultCache;
 use Kirby\Cache\Value;
 
-class SiteGroundCache extends Cache
+class Cache extends DefaultCache
 {
 	/**
 	 * Returns whether the cache is ready to
